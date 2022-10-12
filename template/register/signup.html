@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>registration</title>
+        <meta name = "description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link  rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>welcome to signup</h3>
+
+        <form action="/signup" method="post">
+        {% csrf_token %}
+            <label for="">username</label>
+            <input type="text" id = "username" name="username" placeholder="create a username" Required>
+            <br>
+            <label for="">first_name</label>
+            <input type="text" id = "first_name" name="first_name" placeholder="enter the first_name" Required>
+            <br>
+            <label for="">last_name</label>
+            <input type="text" id = "last_name" name="last_name" placeholder="enter the last_name" Required>
+            <br>
+            <label for="">password</label>
+            <input type="text" id = "password" name="password" placeholder="enter the password" Required>
+            <br>
+            <label for="">confirm_password</label>
+            <input type="text" id = "confirn_password" name="confirm_password" placeholder="enter the confirm_password" Required>
+            <br>
+            <button type="submit">sign up</button>
+        </form>
+    </body>
+</html>

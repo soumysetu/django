@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>registration</title>
+        <meta name = "description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link  rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>welcome to sign in</h3>
+
+        <form action="/signin" method="post">
+        {% csrf_token %}
+            <label for="">username</label>
+            <input type="text" id = "username" name="username" placeholder="enter your username" Required>
+            <br>
+            
+            <label for="">password</label>
+            <input type="text" id = "password" name="password" placeholder="enter your password" Required>
+            <br>
+            
+            <button type="submit">sign in</button>
+        </form>
+    </body>
+</html>
